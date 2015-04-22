@@ -1,0 +1,51 @@
+#sketchpad {
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
+	border: solid #5e5e5e 1px;
+	overflow: hidden;
+	border-radius: 2px; 
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 600px;
+}
+
+#toolbar {
+	width: 100.85%;
+}
+
+#toolbar > input {
+	display:block;
+	float:left;
+	width: 25%;
+	font-family: Arial;
+	color: #5e5e5e;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	margin-right: -1px;
+	margin-bottom: -1px;
+
+	border: solid #5e5e5e 1px;
+	text-decoration: none;
+
+	background-color: #FFF;
+	border-radius: 2px; 
+
+	outline: 0;
+}
+#toolbar > input.selected {
+	background-color: #DDD;
+}
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+
+.grid-block {
+	float:left;
+	opacity: 0;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>SketchPad | The Odin Project</title>
+	<link rel='stylesheet' href='css/sketchpad.css'>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="toolbar">
+			<input type="submit" id="clear" value="Reset" onclick="initialise();" />
+			<input type="submit" id="colour" value="Colours" onclick='toggleColour();$(this).toggleClass("selected")' />
+			<input type="submit" id="gradient" value="Gradient" onclick='toggleGradient();$(this).toggleClass("selected")'/>
+			<input type="submit" id="trail" value="Trail" onclick='toggleTrail();$(this).toggleClass("selected")'/>
+		</div>
+		<br/>
+		<div id="sketchpad"></div>
+	</div>
+
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/sketchpad.js"></script>	
+</body>
+</html>
